@@ -1,0 +1,24 @@
+{
+  "name": "suzaki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest --coverage --config ./jest.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szk3600/suzaki.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szk3600/suzaki/issues"
+  },
+  "homepage": "https://github.com/szk3600/suzaki#readme",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "serialport": "^9.0.7"
+  }
+}
