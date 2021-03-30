@@ -30,10 +30,9 @@ module.exports = class Reader {
 	async findPort() {
 		const ports = await this.SerialPort.list();
 		// 複数ポートがある場合には、スザキのポートを判定する処理を入れる
-		if (ports.length > 0) {
-			return new this.SerialPort(ports[0].path);
-		}
-
+		const result = ports.find(port => port.manufacturer === process.env.MANUFACTURER)
+		console.log(result);
+		if (result) return new this.SerialPort(result.path);
 		throw Error('シリアルポートが見つかりません！');
 	}
 }

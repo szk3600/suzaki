@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/szk3600/suzaki#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "jest": "^26.6.3",
     "serialport": "^9.0.7"
   }

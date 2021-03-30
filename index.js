@@ -1,3 +1,4 @@
+require('dotenv').config();
 const SerialPort = require('serialport')
 const Reader = require('./Reader.js');
 const Collector = require('./Collector');
