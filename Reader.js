@@ -32,7 +32,7 @@ module.exports = class Reader {
 		// 複数ポートがある場合には、スザキのポートを判定する処理を入れる
 		const result = ports.find(port => port.manufacturer === process.env.MANUFACTURER)
 		console.log(result);
-		if (result) return new this.SerialPort(result.path);
+		if (result) return new this.SerialPort(result.path, { baudRate: parseInt(process.env.PORT_BAUD) });
 		throw Error('シリアルポートが見つかりません！');
 	}
 }

@@ -62,7 +62,7 @@ module.exports = class Collector {
 	 * 機体番号がバーコードリーダーかどうかチェックする
 	 */
 	isBarcode(syubetsu) {
-		return syubetsu === '$';
+		return syubetsu === process.env.SYUBETSU;
 	}
 
 	/**
