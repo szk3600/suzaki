@@ -45,7 +45,7 @@ module.exports = class Writer {
 	 * 日付からファイル名を返します。
 	 */
 	newFileName(date, day) {
-		return 'log/log_' + date.getFullYear() + '_' + date.getMonth() + 1 + '_' + day + '.csv';
+		return 'log/log_' + date.getFullYear() + '_' + (date.getMonth() + 1) + '_' + day + '.csv';
 	}
 
 }
